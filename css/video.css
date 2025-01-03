@@ -1,0 +1,83 @@
+.preview-pic{
+    width: 100%;
+    height: 190px;
+    flex-wrap: wrap;
+    display: block;
+    object-fit: cover;
+}
+.preview-pic-row{
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative;
+}
+.video-time{
+    background-color: black;
+    position: absolute;
+    color: white;
+    right: 5px;
+    bottom: 5px;
+    font-family: Roboto, Oxygen, Ubuntu;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 3px;
+    border-radius: 2px;
+}
+.info-row{
+    margin-top: 5px;  
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 10px;
+}
+.channelprofilepic{
+    width: 50px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+}
+.profilepic{
+    width: 75%;  
+    border-radius: 50%;
+}
+.video-title{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.youtuber,
+.viewsperiod{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+.youtuber{
+    margin-bottom: 4px;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 0 auto; 
+}
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1399px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1400px) {
+    .video-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
